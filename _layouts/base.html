@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+{% include head.html %}
+</head>
+<body class="body custom-background">
+    <nav class="navbar navbar-inverse navbar-fixed-static topnav">
+        {% include nav.html %}
+    </nav>
+
+    <!--aside class="lsidebar"></aside-->
+
+    <section class="container banner">
+        <div class="row">
+        {% include banner.html %}
+        <br>
+        </div>
+    </section>
+
+    <section class="container mainwrapper">
+        <div class="main">
+            <article class="center">
+                {{ content }}
+            </article>
+        </div>
+        <aside class="visible-sm-block visible-md-block visible-lg-block rsidebar">
+            {% include rsidebar.html %}
+        </aside>
+    </section>
+
+    <footer class="container-fluid foot">
+    {% include footer.html %}
+    </footer>
+
+    <script src="{{ site.baseurl }}/assets/js/jquery-1.24.4.min.js"/>
+    <script src="{{ site.baseurl }}/assets/bootstrap-3.3.7/js/bootstrap.min.js"/>
+    <script src="{{ site.baseurl }}/assets/js/body.js"/>
+    <script src="{{ site.baseurl }}/assets/js/duomai.body.js"/>
+    <script src="{{ site.baseurl }}/assets/js/taobao.body.js"/>
+    <script src="https://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"/>
+</body>
+</html>

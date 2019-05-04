@@ -1,0 +1,34 @@
+encoding: UTF-8
+future: true
+
+highlighter: rouge
+markdown: kramdown
+
+url:  "https://www.lijiaocn.com"
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+
+name: "Jekyll静态网页模版"
+baseurl:    
+img:   /img
+imgcdn: 
+lsi:       false
+excerpt_separator: "----"
+ICP-number:
+Copyright: Copyright @2011-2019 All rights reserved.
+
+
+permalink: pretty
+pagination:
+  enabled: true
+  per_page: 20
+  permalink: '/:num/'
+  title: ':title | :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 4
+    after: 4

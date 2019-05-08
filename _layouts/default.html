@@ -27,9 +27,12 @@ layout: "base"
 <div class="row content">
 	{{content}}
 </div>
+<div class="row" >
+	{% include pre_and_next.html %}
+</div>
 <div class="row copyright">
-	{% include copyright.html %}
 	{% include pagetag.html %}
+	{% include copyright.html %}
 </div>
 
 <div class="row page_bottom_ad">

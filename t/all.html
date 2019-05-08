@@ -1,10 +1,18 @@
 ---
 layout: default
-title:  全部标签
-keywords:  手册,索引手册,参考手册,速查手册
-description: 视频教程,全部标签,手册汇总,用于快速查询
+title:  全站标签
+keywords:  Jekyll静态模版,标签
+description: Jekyll静态模版展示网站所有标签下的文章列表。
 
 ---
+
+<h5><a id="全站标签" href="#全站标签">全站标签:</a></h5>
+<p style="text-align:center">
+{% for tag in site.tags %}
+<span><a href="/tags/all.html#{{ tag[0] }}">{{ tag[0] }}</a>&nbsp&nbsp&nbsp</span>
+{% endfor %}
+</p>
+
 {% for tag in site.tags %}
 <h5><a id="{{ tag[0]}}" href="#{{tag[0]}}">{{ tag[0] }}:</a></h5>
 	<ul>

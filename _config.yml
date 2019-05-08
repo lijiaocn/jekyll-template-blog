@@ -1,24 +1,24 @@
+name: "Jekyll静态网页模版"
+url:  "https://www.lijiaocn.com"
+baseurl: ""  
+Copyright: Copyright @2011-2019 All rights reserved.
+ICP-number:
+img:   /img
+imgcdn: 
+
 encoding: UTF-8
 future: true
 
 highlighter: rouge
 markdown: kramdown
 
-url:  "https://www.lijiaocn.com"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate-v2
 
-name: "Jekyll静态网页模版"
-baseurl:    
-img:   /img
-imgcdn: 
-lsi:       false
+lsi:  false
 excerpt_separator: "----"
-ICP-number:
-Copyright: Copyright @2011-2019 All rights reserved.
-
 
 permalink: pretty
 pagination:

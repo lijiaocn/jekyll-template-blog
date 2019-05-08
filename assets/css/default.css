@@ -28,6 +28,7 @@ nav.topnav {
 section.banner {
     text-align: center;
     padding: 0px;
+    width: 100%;
 }
 
 aside.lsidebar{

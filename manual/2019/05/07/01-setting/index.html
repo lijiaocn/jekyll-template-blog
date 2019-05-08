@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="在使用该模版之前，需要将_config.yml以及模版中的信息设置自己的站点信息。李佶澳,使用手册,">
+<meta name="keywords" content="使用手册使用手册">
+<meta name="author" content="李佶澳">
+
+<title>第一步：配置网站信息|Jekyll静态网页模版</title>
+
+<link rel="stylesheet" type="text/css" href="/assets/bootstrap-3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/bootstrap-3.3.7/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/default.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/highlight.css">
+<link rel="alternate" type="application/rss+xml" title="Jekyll静态网页模版" href="/feed.xml">
+<link rel="icon" href="/favicon.ico">
+
+<!--Google ads 全局依赖代码 -->
+<script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics 全局依赖代码-->
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-105389858-1"></script>
+<!-- 需要尽早执行的js代码 -->
+<script async="async" src="/assets/js/head.js" ></script>
+
+</head>
+<body class="body custom-background">
+    <nav class="navbar navbar-inverse navbar-fixed-static topnav">
+        <!-- display sm md lg -->
+<div class="container" >
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#categories" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="navbar-brand hidden-sm">
+      <span><a href="/" title="主页">lijiaocn</a></span>
+      <span class="glyphicon glyphicon-hand-right" style="margin-left:15px"></span>
+    </div>
+  </div>
+  <div class="collapse navbar-collapse" id="categories">
+    <ul class="nav navbar-nav">
+      <li><a href="https://study.163.com/provider/400000000376006/course.htm?share=2&shareId=400000000376006" target="_blank">教程</a></li>
+       
+        
+        
+        <li><a href="/c/about/">介绍</a></li>
+       
+        
+        
+        <li><a href="/c/manual/">手册</a></li>
+      
+      <li><a href="/t/all/">标签</a></li>
+    </ul>
+  </div>
+</div>
+
+    </nav>
+
+    <!--aside class="lsidebar"></aside-->
+
+    <section class="banner">
+        <br>
+
+    </section>
+
+    <section class="container mainwrapper">
+        <div class="main">
+            <article class="center">
+                <div class="row title">
+	<h1>第一步：配置网站信息</h1>
+</div>
+
+<div class="row pageheader">
+	<p>
+<span>
+<a href="https://www.lijiaocn.com/discount/" target="_blank" style="color:red;font-weight:bold">淘宝/天猫优惠券</a>&nbsp&nbsp&nbsp
+<a href="https://www.lijiaocn.com/linux" target="_blank">《技术手册》</a>&nbsp
+<a href="https://www.lijiaocn.com/douyin" target="_blank">《运营手册》</a>&nbsp
+<a href="https://www.lijiaocn.com/programming" target="_blank">《编程手册》</a>&nbsp
+<a href="https://www.lijiaocn.com/classes/about/" target="_blank" style="color:red;font-weight:bold">全网视频教程3000+</a>&nbsp&nbsp
+</span>
+</p>
+
+
+</div>
+
+
+<div class="row author">
+	<p>
+
+
+<span class="glyphicon glyphicon-folder-open"></span>
+
+
+<span>&nbsp<a href="/c/manual/">手册</a>&nbsp</span>
+
+
+
+<span class="glyphicon glyphicon-tag"></span>
+<span><a href="/t/all/#使用手册">使用手册</a>&nbsp</span>
+
+</p>
+
+	<p>作者:&nbsp;<a href="/about/">李佶澳</a>&nbsp;&nbsp;&nbsp;转载保留：<a href="">原文地址</a>&nbsp;&nbsp;&nbsp;上次更新：2019-05-07 23:36:21 +0800</p>
+
+</div>
+
+
+<div class="row top_ad">
+	<!-- 顶部条幅广告 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8176866190626448"
+     data-ad-slot="1000173679"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+<div class="row top_social">
+	
+</div>
+
+<div class="row content">
+	<ul id="markdown-toc">
+  <li><a href="#说明" id="markdown-toc-说明">说明</a></li>
+  <li><a href="#站点基本信息_configyml" id="markdown-toc-站点基本信息_configyml">站点基本信息：_config.yml</a></li>
+  <li><a href="#站点分类频道_datacateinfosyml" id="markdown-toc-站点分类频道_datacateinfosyml">站点分类频道：_data/cateinfos.yml</a></li>
+  <li><a href="#站点标签汇总tallhtml" id="markdown-toc-站点标签汇总tallhtml">站点标签汇总：t/all.html</a></li>
+  <li><a href="#定制网站组件_includeshtml" id="markdown-toc-定制网站组件_includeshtml">定制网站组件：_includes/*.html</a></li>
+  <li><a href="#css与js文件" id="markdown-toc-css与js文件">css与js文件</a></li>
+  <li><a href="#网站首页indexmd" id="markdown-toc-网站首页indexmd">网站首页：index.md</a></li>
+  <li><a href="#参考" id="markdown-toc-参考">参考</a></li>
+</ul>
+
+<h2 id="说明">说明</h2>
+
+<p>在使用该模版之前，需要对配置文件以及部分模版文件进行修改，将里面的信息替换你自己的站点信息。</p>
+
+<h2 id="站点基本信息_configyml">站点基本信息：_config.yml</h2>
+
+<p>设置网站名称，网站地址、版权信息、备案号、图片地址，如果没有可以为空：</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Jekyll静态网页模版"</span>
+<span class="na">url</span><span class="pi">:</span>  <span class="s2">"</span><span class="s">https://www.lijiaocn.com"</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span>  
+<span class="na">Copyright</span><span class="pi">:</span> <span class="s">Copyright @2011-2019 All rights reserved.</span>
+<span class="na">ICP-number</span><span class="pi">:</span>
+<span class="na">img</span><span class="pi">:</span>   <span class="s">/img</span>
+<span class="na">imgcdn</span><span class="pi">:</span> 
+</code></pre></div></div>
+
+<h2 id="站点分类频道_datacateinfosyml">站点分类频道：_data/cateinfos.yml</h2>
+
+<p><code class="highlighter-rouge">_data/cateinfos.yml</code>是站点分类频道信息，<code class="highlighter-rouge">about</code>是频道的英文名称，<code class="highlighter-rouge">关于</code>是频道的中文名称：</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">about</span><span class="pi">:</span> 
+  <span class="na">name</span><span class="pi">:</span> <span class="s">关于</span>
+<span class="na">manual</span><span class="pi">:</span> 
+  <span class="na">name</span><span class="pi">:</span> <span class="s">手册</span>
+</code></pre></div></div>
+
+<p>设置好频道之后，需要在目录<code class="highlighter-rouge">c/</code>中创建以频道英文名称命名的频道页：</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>▾ c/
+    about.md
+    manual.md
+</code></pre></div></div>
+
+<p>频道页内容如下，每个频道页有各自的title、keywords以及description，category的值是当前频道的英文名：</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">---</span>
+layout: default 
+title: 站务信息
+keywords:  Jekyll静态模版,站务通知,关于本站,消息列表
+description: Jekyll静态博客模板的站务信息列表，模版更新通知
+pagination:
+  category: about
+  enabled: <span class="nb">true
+  </span>permalink: /:num/
+<span class="nt">---</span>
+<span class="o">{</span>% include pagination.html <span class="nv">paginator</span><span class="o">=</span>paginator %<span class="o">}</span>
+</code></pre></div></div>
+
+<p>频道的中文名显示在网站上方（见本站顶部），连接到频道页，频道页中是当前频道的所有文章列表。</p>
+
+<p>网站上方频道页的呈现顺序与每个频道的第一篇文章的时间排序顺序相同。</p>
+
+<p>设置文章的categories时，使用频道的英文名称。</p>
+
+<h2 id="站点标签汇总tallhtml">站点标签汇总：t/all.html</h2>
+
+<p><code class="highlighter-rouge">t/all/html</code>站点使用的所有标签，以及标签下的文章。</p>
+
+<h2 id="定制网站组件_includeshtml">定制网站组件：_includes/*.html</h2>
+
+<p><code class="highlighter-rouge">_includes</code>中存放的是网站的组件，这些组件被<code class="highlighter-rouge">_layouts</code>中的页面模版引用，根据自己的需要修改这些组件中的内容。</p>
+
+<p><strong>head.html</strong>：每个网页的head，在这里添加统计代码，google ads全局代码。</p>
+
+<p><strong>nav.html</strong>：网站的导航栏，默认包含所有有文章的频道，在这里添加连接到其它网址的频道。</p>
+
+<p><strong>banner.html</strong>：位于导航栏正下方，与屏幕同宽，用来设置大幅轮换的Banner。</p>
+
+<p><strong>rsidebar.html</strong>：网页的右侧边栏，宽度为336px，屏幕宽度小于992px时不显示。</p>
+
+<p><strong>pageheader.html</strong>：内容中标题正下方紧邻的区域。</p>
+
+<p><strong>pagetag.html</strong>：文章所属目录、标签。</p>
+
+<p><strong>author.html</strong>：作者、文章更新时间。</p>
+
+<p><strong>top_ad.html</strong>：广告区域，正文开始之前。</p>
+
+<p><strong>social.html</strong>：转载收藏按钮，正文开始之前。</p>
+
+<p><strong>pre_and_next.html</strong>：当前栏目的前一篇和后一篇文章连接。</p>
+
+<p><strong>copyright.html</strong>：版权信息。</p>
+
+<p><strong>bottom_ad.html</strong>：广告区域，正文之后。</p>
+
+<p><strong>related.html</strong>：相关文章，Google的相关页广告。</p>
+
+<p><strong>recent.html</strong>：全站最近十篇文章。</p>
+
+<p><strong>footer.html</strong>：网页的最底部区域。</p>
+
+<p><strong>notfound.html</strong>：404页面内容。</p>
+
+<p><strong>error.html</strong>：50x页面内容。</p>
+
+<p><strong>pagination.html</strong>：文章目录列表。</p>
+
+<p>这些组件的位置在<code class="highlighter-rouge">_layouts</code>中的模版文件里设置。</p>
+
+<h2 id="css与js文件">css与js文件</h2>
+
+<p>css和js文件位于<code class="highlighter-rouge">assets</code>目录中，根据需要修改。</p>
+
+<h2 id="网站首页indexmd">网站首页：index.md</h2>
+
+<p><code class="highlighter-rouge">index.md</code>是网站首页呈现的内容，默认展示所有站点所有频道中的文章。</p>
+
+<h2 id="参考">参考</h2>
+
+<ol>
+  <li><a href="https://jekyllrb.com/" title="Jekyll: Transform your plain text into static websites and blogs.">Jekyll: Transform your plain text into static websites and blogs.</a></li>
+</ol>
+
+
+</div>
+<div class="row" >
+	<div class="col-xs-6 col-lg-6" style="text-align:left;padding:0px">
+
+<span class="glyphicon glyphicon-chevron-left"/><a href="">开始</a>
+
+</div>
+<div class="col-xs-6 col-lg-6" style="text-align:right;padding:0px">
+
+<span class="glyphicon glyphicon-chevron-right"/><a href="/manual/2019/05/07/02-add-post/">第二步：添加文章</a>
+
+</div>
+
+
+</div>
+<div class="row copyright">
+	<p>
+
+
+<span class="glyphicon glyphicon-folder-open"></span>
+
+
+<span>&nbsp<a href="/c/manual/">手册</a>&nbsp</span>
+
+
+
+<span class="glyphicon glyphicon-tag"></span>
+<span><a href="/t/all/#使用手册">使用手册</a>&nbsp</span>
+
+</p>
+
+	
+<div>
+	<p><strong><a href="/manual/2019/05/07/01-setting/">转载附原文地址：http://localhost:4009</a></strong></p>
+</div>
+
+
+</div>
+
+<div class="row page_bottom_ad">
+	<div>
+<a target="_blank" href="https://www.lijiaocn.com/好货/2018/04/25/fu-fei-she-que.html" style="text-align:center"><h4>不贵、回报超高的付费社区都有哪些？（知识星球）</h4></a>
+</div>
+
+<!-- 底部横幅广告 -->
+<div>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8176866190626448"
+     data-ad-slot="4061827929"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+</div>
+
+<div class="row related">
+	<!-- Google 匹配内容页面-->
+<ins class="adsbygoogle"
+   style="display:block"
+   data-ad-format="autorelaxed"
+   data-ad-client="ca-pub-8176866190626448"
+   data-ad-slot="6443696990"></ins>
+<script>
+   (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+<div class="row recent">
+	<!-- 最近十篇 -->
+<div class="row">
+  
+  <p><a href="/manual/2019/05/08/03-run-site/">第三步：运行站点</a></p>
+  
+  <p><a href="/manual/2019/05/07/02-add-post/">第二步：添加文章</a></p>
+  
+  <p><a href="/about/">一个Jekyll静态博客网站的诞生</a></p>
+  
+</div>
+
+</div>
+
+            </article>
+        </div>
+        <aside class="visible-sm-block visible-md-block visible-lg-block rsidebar">
+            <div class="row rsidebar-content">
+  <div class="col-xs-12 rsidebar-element searchbar">
+    <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+    <div class="row">
+      <div class="col-xs-12 rsidebar-element">
+        <input name="sitesearch" type="hidden" value="lijiaocn.com">
+        <input autocomplete="on" class="form-controls search" name="q" placeholder="站内搜索" required="required"  type="text">
+        <button class="button" type="submit">Google</button>
+      </div>
+    </div>
+    </form>
+  </div>
+  <div class="col-xs-12 rsidebar-element searchbar">
+<script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=9223757389429746735' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
+  </div>
+  <div class="col-xs-12 rsidebar-element">
+    <img src="//img/rsidebar/xiaomiquan-money-free.jpeg"></img>
+  </div>
+  <div class="col-xs-12 rsidebar-element">
+    <img src="//img/rsidebar/xiaomiquan-caoz.png"></img>
+  </div>
+  <div class="col-xs-12 rsidebar-element">
+    <img src="//img/rsidebar/xiaomiquan-ziliu.png"></img>
+  </div>
+  <div class="col-xs-12 rsidebar-element">
+    <img src="//img/rsidebar/class.jpg"></img>
+  </div>
+  <div class="col-xs-12 rsidebar-element" style="color:#337ab7">
+    <h4>QQ交流群</h4>
+    <p>区块链实践互助QQ群：576555864</p>
+    <p>Kubernetes实践互助QQ群：947371129</p>
+    <p>Prometheus实践互助QQ群：952461804</p>
+    <p>Kong/Envoy实践互助QQ群：952503851</p>
+    <p>Ansible实践互助QQ群：955105412</p>
+  </div>
+  <div class="col-xs-12 rsidebar-element">
+    <a target="_blank" href="https://www.lijiaocn.com/好货/2018/04/25/fu-fei-she-que.html"><h4>不贵、回报超高的付费社区都有哪些？（知识星球）</h4></a>
+  </div>
+
+  <div class="col-xs-12 rsidebar-element">
+  <!-- 右侧边栏广告 -->
+  <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8176866190626448"
+     data-ad-slot="2723439605"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </div>
+
+  <div class="col-xs-12 rsidebar-element">
+  <!-- 右侧边栏广告2 -->
+  <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8176866190626448"
+     data-ad-slot="4426808013"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </div>
+
+  <div class="col-xs-12 rsidebar-element">
+  <!-- 右侧边栏广告3 -->
+  <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8176866190626448"
+     data-ad-slot="3551466770"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </div>
+</div>
+
+        </aside>
+    </section>
+
+    <footer class="container-fluid foot">
+    <p>
+<span></span>
+<span>Copyright @2011-2019 All rights reserved.</span>
+<span>lijiaocn@foxmail.com</span>
+</p>
+<p>
+<span>友情链接:&nbsp</span> 
+<span><a href="https://www.baidu.com">百度</a>&nbsp</span>
+<span><a href="https://www.google.com">Google</a>&nbsp</span>
+</p>
+
+    </footer>
+
+    <script src="/assets/js/jquery-1.24.4.min.js"/>
+    <script src="/assets/bootstrap-3.3.7/js/bootstrap.min.js"/>
+    <script src="/assets/js/body.js"/>
+    <script src="/assets/js/duomai.body.js"/>
+    <script src="/assets/js/taobao.body.js"/>
+    <script src="https://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"/>
+</body>
+</html>

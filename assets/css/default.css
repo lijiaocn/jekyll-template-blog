@@ -13,7 +13,7 @@
 }
 
 body.custom-background {
-    background-image: url(/img/bg.png);
+    background-image: url(/jekyll-template-blog/img/bg.png);
     background-position: left top;
     background-size: auto;
     background-repeat: repeat;
@@ -23,6 +23,14 @@ body.custom-background {
 nav.topnav {
     border-radius: 0px; 
     margin-bottom: 0px;
+    background: gainsboro;
+}
+nav span.icon-bar{
+    background: white;
+}
+
+#navb {
+    background-color: gray;
 }
 
 section.banner {

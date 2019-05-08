@@ -9,10 +9,10 @@
 
 <title>第二步：添加文章|Jekyll静态网页模版</title>
 
-<link rel="stylesheet" type="text/css" href="/jekyll-template-blog//assets/bootstrap-3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="/jekyll-template-blog//assets/bootstrap-3.3.7/css/bootstrap-theme.min.css">
-<link rel="stylesheet" type="text/css" href="/jekyll-template-blog//assets/css/default.css">
-<link rel="stylesheet" type="text/css" href="/jekyll-template-blog//assets/css/highlight.css">
+<link rel="stylesheet" type="text/css" href="/jekyll-template-blog/assets/bootstrap-3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/jekyll-template-blog/assets/bootstrap-3.3.7/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="/jekyll-template-blog/assets/css/default.css">
+<link rel="stylesheet" type="text/css" href="/jekyll-template-blog/assets/css/highlight.css">
 <link rel="alternate" type="application/rss+xml" title="Jekyll静态网页模版" href="/feed.xml">
 <link rel="icon" href="/favicon.ico">
 
@@ -21,38 +21,37 @@
 <!-- Global site tag (gtag.js) - Google Analytics 全局依赖代码-->
 <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-105389858-1"></script>
 <!-- 需要尽早执行的js代码 -->
-<script async="async" src="/jekyll-template-blog//assets/js/head.js" ></script>
+<script async="async" src="/jekyll-template-blog/assets/js/head.js" ></script>
 
 </head>
 <body class="body custom-background">
-    <nav class="navbar navbar-inverse navbar-fixed-static topnav">
+    <nav class="navbar navbar-fixed-static topnav">
         <!-- display sm md lg -->
 <div class="container" >
   <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#categories" aria-expanded="false" aria-controls="navbar">
+    <button id="navb" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#categories" aria-expanded="false" aria-controls="navbar">
       <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
+      <span class="icon-bar" style="color:black"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
     <div class="navbar-brand hidden-sm">
-      <span><a href="/" title="主页">lijiaocn</a></span>
+      <span><a href="/jekyll-template-blog/" title="主页">lijiaocn</a></span>
       <span class="glyphicon glyphicon-hand-right" style="margin-left:15px"></span>
     </div>
   </div>
   <div class="collapse navbar-collapse" id="categories">
     <ul class="nav navbar-nav">
-      <li><a href="https://study.163.com/provider/400000000376006/course.htm?share=2&shareId=400000000376006" target="_blank">教程</a></li>
        
-        
-        
-        <li><a href="/jekyll-template-blog//c/about/">介绍</a></li>
-       
-        
-        
-        <li><a href="/jekyll-template-blog//c/manual/">手册</a></li>
       
-      <li><a href="/jekyll-template-blog//t/all/">标签</a></li>
+      
+      <li><a href="/jekyll-template-blog/c/about/">介绍</a></li>
+       
+      
+      
+      <li><a href="/jekyll-template-blog/c/manual/">手册</a></li>
+      
+      <li><a href="/jekyll-template-blog/t/all/">标签</a></li>
     </ul>
   </div>
 </div>
@@ -95,16 +94,16 @@
 <span class="glyphicon glyphicon-folder-open"></span>
 
 
-<span>&nbsp<a href="/jekyll-template-blog//c/manual/">手册</a>&nbsp</span>
+<span>&nbsp<a href="/jekyll-template-blog/c/manual/">手册</a>&nbsp</span>
 
 
 
 <span class="glyphicon glyphicon-tag"></span>
-<span><a href="/jekyll-template-blog//t/all/#使用手册">使用手册</a>&nbsp</span>
+<span><a href="/jekyll-template-blog/t/all/#使用手册">使用手册</a>&nbsp</span>
 
 </p>
 
-	<p>作者:&nbsp;<a href="/jekyll-template-blog//about/">李佶澳</a>&nbsp;&nbsp;&nbsp;转载保留：<a href="">原文地址</a>&nbsp;&nbsp;&nbsp;上次更新：2019-05-08 00:34:16 +0800</p>
+	<p>作者:&nbsp;<a href="/jekyll-template-blog/about/">李佶澳</a>&nbsp;&nbsp;&nbsp;转载保留：<a href="">原文地址</a>&nbsp;&nbsp;&nbsp;上次更新：2019-05-08 00:34:16 +0800</p>
 
 </div>
 
@@ -271,18 +270,18 @@ itemlist:
 <span class="glyphicon glyphicon-folder-open"></span>
 
 
-<span>&nbsp<a href="/jekyll-template-blog//c/manual/">手册</a>&nbsp</span>
+<span>&nbsp<a href="/jekyll-template-blog/c/manual/">手册</a>&nbsp</span>
 
 
 
 <span class="glyphicon glyphicon-tag"></span>
-<span><a href="/jekyll-template-blog//t/all/#使用手册">使用手册</a>&nbsp</span>
+<span><a href="/jekyll-template-blog/t/all/#使用手册">使用手册</a>&nbsp</span>
 
 </p>
 
 	
 <div>
-	<p><strong><a href="/jekyll-template-blog//manual/2019/05/07/02-add-post/">转载附原文地址：https://www.lijiaocn.com</a></strong></p>
+	<p><strong><a href="/jekyll-template-blog/manual/2019/05/07/02-add-post/">转载附原文地址：https://www.lijiaocn.com</a></strong></p>
 </div>
 
 
@@ -340,30 +339,22 @@ itemlist:
   <div class="col-xs-12 rsidebar-element searchbar">
 <script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=9223757389429746735' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
   </div>
-  <div class="col-xs-12 rsidebar-element">
-    <img src="/jekyll-template-blog///img/rsidebar/xiaomiquan-money-free.jpeg"></img>
-  </div>
-  <div class="col-xs-12 rsidebar-element">
-    <img src="/jekyll-template-blog///img/rsidebar/xiaomiquan-caoz.png"></img>
-  </div>
-  <div class="col-xs-12 rsidebar-element">
-    <img src="/jekyll-template-blog///img/rsidebar/xiaomiquan-ziliu.png"></img>
-  </div>
-  <div class="col-xs-12 rsidebar-element">
-    <img src="/jekyll-template-blog///img/rsidebar/class.jpg"></img>
-  </div>
-  <div class="col-xs-12 rsidebar-element" style="color:#337ab7">
-    <h4>QQ交流群</h4>
-    <p>区块链实践互助QQ群：576555864</p>
-    <p>Kubernetes实践互助QQ群：947371129</p>
-    <p>Prometheus实践互助QQ群：952461804</p>
-    <p>Kong/Envoy实践互助QQ群：952503851</p>
-    <p>Ansible实践互助QQ群：955105412</p>
-  </div>
+
   <div class="col-xs-12 rsidebar-element">
     <a target="_blank" href="https://www.lijiaocn.com/好货/2018/04/25/fu-fei-she-que.html"><h4>不贵、回报超高的付费社区都有哪些？（知识星球）</h4></a>
   </div>
-
+  <div class="col-xs-12 rsidebar-element">
+    <img src="/jekyll-template-blog//img/rsidebar/xiaomiquan-money-free.jpeg"></img>
+  </div>
+  <div class="col-xs-12 rsidebar-element">
+    <img src="/jekyll-template-blog//img/rsidebar/xiaomiquan-caoz.png"></img>
+  </div>
+  <div class="col-xs-12 rsidebar-element">
+    <img src="/jekyll-template-blog//img/rsidebar/xiaomiquan-ziliu.png"></img>
+  </div>
+  <div class="col-xs-12 rsidebar-element">
+    <img src="/jekyll-template-blog//img/rsidebar/class.jpg"></img>
+  </div>
   <div class="col-xs-12 rsidebar-element">
   <!-- 右侧边栏广告 -->
   <ins class="adsbygoogle"
@@ -421,11 +412,11 @@ itemlist:
 
     </footer>
 
-    <script src="/jekyll-template-blog//assets/js/jquery-1.24.4.min.js"/>
-    <script src="/jekyll-template-blog//assets/bootstrap-3.3.7/js/bootstrap.min.js"/>
-    <script src="/jekyll-template-blog//assets/js/body.js"/>
-    <script src="/jekyll-template-blog//assets/js/duomai.body.js"/>
-    <script src="/jekyll-template-blog//assets/js/taobao.body.js"/>
-    <script src="https://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"/>
+    <script src="/jekyll-template-blog/assets/js/jquery-1.24.4.min.js"></script>
+    <script src="/jekyll-template-blog/assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="/jekyll-template-blog/assets/js/body.js"></script>
+    <script src="/jekyll-template-blog/assets/js/duomai.body.js"></script>
+    <script src="/jekyll-template-blog/assets/js/taobao.body.js"></script>
+    <script src="https://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
 </body>
 </html>

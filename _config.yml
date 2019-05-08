@@ -1,6 +1,6 @@
 name: "Jekyll静态网页模版"
 url:  "https://www.lijiaocn.com"
-baseurl: ""  
+baseurl: "/jekyll-template-blog/"  
 Copyright: Copyright @2011-2019 All rights reserved.
 ICP-number:
 img:   /img

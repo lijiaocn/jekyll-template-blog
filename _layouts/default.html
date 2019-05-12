@@ -2,52 +2,47 @@
 layout: "base"
 ---
 <div class="row title">
-	<h1>{{ page.title }}</h1>
+  <h1>{{ page.title }}</h1>
 </div>
 
 <div class="row pageheader">
-	{% include pageheader.html %}
+  {% include pageheader.html %}
 </div>
 
 {% if page.author %}
 <div class="row author">
 {% if page.cover %}
-	<img src="{{ site.baseurl }}{{ site.img }}/cover/16x9/{{ page.cover }}" alt="{{ page.title }}"/>
+  <img src="{{ site.baseurl }}{{ site.img }}/cover/16x9/{{ page.cover }}" alt="{{ page.title }}"/>
 {% endif %}
-	<br>
-	{% include author.html %}
-	{% include pagetag.html %}
+  <br>
+  {% include author.html %}
+  {% include pagetag.html %}
 </div>
 {% endif %}
 
 <div class="row top_ad">
-	{% include top_ad.html %}
+  {% include top_ad.html %}
 </div>
 
 <div class="row top_social">
-	{% include social.html %}
+  {% include social.html %}
 </div>
 
 <div class="row content">
-	{{content}}
+  {{content}}
 </div>
 <div class="row" >
-	<br>
-	{% include pre_and_next.html %}
+  <br>
+  {% include pre_and_next.html %}
 </div>
 <div class="row copyright">
-	{% include pagetag.html %}
-	{% include copyright.html %}
+  {% include copyright.html %}
 </div>
 
 <div class="row page_bottom_ad">
-	{% include bottom_ad.html %}
+  {% include bottom_ad.html %}
 </div>
 
 <div class="row related">
-	{% include related.html %}
-</div>
-
-<div class="row recent">
-	{% include recent.html %}
+  {% include related.html %}
 </div>

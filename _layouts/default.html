@@ -26,6 +26,9 @@ layout: "base"
 </div>
 
 <div class="row content">
+{% if page.cover %}
+	<img src="{{ site.baseurl }}{{ site.img }}/cover/16x9/{{ page.cover }}" alt="{{ page.title }}"/>
+{% endif %}
 	{{content}}
 </div>
 <div class="row" >

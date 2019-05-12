@@ -16,6 +16,93 @@
 <link rel="alternate" type="application/rss+xml" title="Jekyll静态网页模版" href="/feed.xml">
 <link rel="icon" href="/favicon.ico">
 
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@graph":[
+    {
+      "@type": "Organization",
+      "logo": "https://www.lijiaocn.com/jekyll-template-blog/img/logo-112x112.jpg",    //LOGO图片地址，必须是112x112，.jpg,.png,.gif
+      "url": "https://www.lijiaocn.com"               //与Logo相关联的url
+    },
+/*   
+    {   
+      "@type": "WebSite",
+      "url": "https://www.lijiaocn.com",              //被搜索的网站
+      "potentialAction": {
+        "@type": "SearchAction", 
+                                                      //targe指定的域名必须是站点域名，不能用第三方搜索
+        "target": "https://www.lijiaocn.com/search?q={search_term_string}+site%3Alijiaocn.com", 
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Person",                         //社交账号
+      "name": "lijiaocn博客",                    //组织或个人名称
+      "url": "https://www.lijiaocn.com",         //网站地址
+      "sameAs": [
+        "http://www.facebook.com/your-profile",  //社交账号地址，不支持的国内的
+        "http://instagram.com/yourProfile",
+        "http://www.linkedin.com/in/yourprofile",
+        "http://plus.google.com/your_profile"
+      ]
+    },
+*/
+    {
+      "@type": "BreadcrumbList",
+       "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          
+          
+          "name": "手册",
+          "item": "https://www.lijiaocn.com/jekyll-template-blog/c/manual/"
+       },{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "使用手册",
+          "item": "https://www.lijiaocn.com/jekyll-template-blog/t/all#使用手册"
+       }]
+    },
+    {
+      "@type": "Article",
+      "dateModified": "2015-02-05T08:00:00+08:00",
+      "datePublished": "2015-02-05T08:00:00+08:00",
+      "headline": "第二步：添加文章",
+      "image": [                                                //提供三张不同比例的高清图片，长x宽 >= 300 000 
+        "https://www.lijiaocn.com/jekyll-template-blog/img/cover/1x1/双飞.jpg",  //至少：600*600 = 360 000
+        "https://www.lijiaocn.com/jekyll-template-blog/img/cover/4x3/双飞.jpg",  //至少：800*600 = 480 000
+        "https://www.lijiaocn.com/jekyll-template-blog/img/cover/16x9/双飞.jpg"  //至少：960*540 = 518 400
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "李佶澳"    //作者名称
+      },
+      "publisher": {
+         "@type": "Organization",
+         "name": "Jekyll静态网页模版",                          //发布机构名称
+         "logo": {
+           "@type": "ImageObject",
+           "url": "https://www.lijiaocn.com/jekyll-template-blog/img/logo-112x112.jpg" //发布机构Logo,遵循
+         }
+      },
+      "description": "在_post/目录中，用markdown语法写文章，支持频道和标签的设置",
+      "mainEntityOfPage": "https://www.lijiaocn.com/jekyll-template-blog/manual/2019/05/07/02-add-post/",       //网页权威链接，无重复网页就设置成当前页地址
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "xpath": [
+          "/html/head/title",                              //指向head中的title
+          "/html/head/meta[@name='description']/@content"  //指向head中的description
+         ]
+      }
+    }
+  ]
+ }
+</script>
+
+
+
 <!--Google ads 全局依赖代码 -->
 <script async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics 全局依赖代码-->

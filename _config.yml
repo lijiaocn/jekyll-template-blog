@@ -1,10 +1,11 @@
 name: "Jekyll静态网页模版"
 url:  "https://www.lijiaocn.com"
 baseurl: "/jekyll-template-blog"  
+img:  /img
+logo: logo-112x112.jpg
+imgcdn: 
 Copyright: Copyright @2011-2019 All rights reserved.
 ICP-number:
-img:   /img
-imgcdn: 
 
 encoding: UTF-8
 future: true

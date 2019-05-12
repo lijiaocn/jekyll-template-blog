@@ -17,7 +17,7 @@
       {% for c in site.categories %} 
       {% assign key=c[0] %}
       {% assign infos= site.data.cateinfos %}
-      <li><a href="{{ site.baseurl }}/c/{{ c[0]}}/">{{ infos[key].name }}</a></li>
+      <li><a href="{{ site.baseurl }}/c/{{ key }}/">{{ infos[key].name }}</a></li>
       {% endfor %}
       <li><a href="{{ site.baseurl }}/t/all/">标签</a></li>
     </ul>

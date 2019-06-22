@@ -109,6 +109,7 @@ article.center .top_social {
 }
 
 article.center .content {
+    max-width: 800px;
 }
 
 ul#markdown-toc {

@@ -9,20 +9,20 @@ layout: "base"
   {% include pageheader.html %}
 </div>
 
-{% if page.author %}
-<div class="row author">
-{% if page.cover %}
-  <img src="{{ site.baseurl }}{{ site.img }}/cover/16x9/{{ page.cover }}" alt="{{ page.title }}"/>
-{% endif %}
-  <br>
-  {% include author.html %}
-  {% include pagetag.html %}
-</div>
-{% endif %}
-
 <div class="row top_ad">
   {% include top_ad.html %}
 </div>
+
+{% if page.author %}
+<div class="row author">
+  <br>
+  {% include author.html %}
+  {% include pagetag.html %}
+{% if page.cover %}
+  <img src="{{ site.baseurl }}{{ site.img }}/cover/16x9/{{ page.cover }}" alt="{{ page.title }}"/>
+{% endif %}
+</div>
+{% endif %}
 
 <div class="row top_social">
   {% include social.html %}

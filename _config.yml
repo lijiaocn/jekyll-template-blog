@@ -28,7 +28,7 @@ pagination:
   permalink: '/:num/'
   title: ':title | :num of :max'
   limit: 0
-  sort_field: 'date'
+  sort_field: 'createdate'
   sort_reverse: true
   trail:
     before: 4

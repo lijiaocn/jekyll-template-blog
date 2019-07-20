@@ -6,5 +6,6 @@
 # Distributed under terms of the GPL license.
 #
 
-nohup bundle exec jekyll serve --port 4009 2>&1 1 > /tmp/jekyll.log &
+port=`cat port`
+nohup bundle exec jekyll serve --port $port 2>&1 1 > /tmp/jekyll.log &
 #bundle exec jekyll serve --port 4009

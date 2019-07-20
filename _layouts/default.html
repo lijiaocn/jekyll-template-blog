@@ -11,16 +11,21 @@ layout: "base"
 
 <div class="row top_ad">
   {% include top_ad.html %}
+  <br>
 </div>
 
 {% if page.author %}
 <div class="row author">
   <br>
   {% include author.html %}
-  {% include pagetag.html %}
-{% if page.cover %}
-  <img src="{{ site.baseurl }}{{ site.img }}/cover/16x9/{{ page.cover }}" alt="{{ page.title }}"/>
+</div>
 {% endif %}
+
+{% if page.cover %}
+<div class="row author">
+  <img src="{{ site.baseurl }}{{ site.img }}/cover/16x9/{{ page.cover }}" alt="{{ page.title }}"/>
+  <br>
+  {% include pagetag.html %}
 </div>
 {% endif %}
 

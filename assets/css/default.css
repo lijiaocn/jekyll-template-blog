@@ -383,4 +383,7 @@ aside.rsidebar .rsidebar-title {
     section.mainwrapper .main .center {
         margin: 0px;
     }
+    .author{
+        display: none;
+    }
 }

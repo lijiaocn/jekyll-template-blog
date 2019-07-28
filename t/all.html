@@ -10,7 +10,7 @@ noprenext: true
 <h5><a id="全站标签" href="#全站标签">全站标签:</a></h5>
 <p style="text-align:center">
 {% for tag in site.tags %}
-<span><a href="/tags/all.html#{{ tag[0] }}">{{ tag[0] }}</a>&nbsp&nbsp&nbsp</span>
+<span><a href="{{ site.baseurl }}/t/all.html#{{ tag[0] }}">{{ tag[0] }}</a>&nbsp&nbsp&nbsp</span>
 {% endfor %}
 </p>
 

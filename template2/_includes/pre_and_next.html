@@ -1,0 +1,15 @@
+{% if page.noprenext %}
+{% else %}
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="text-align:left;padding:0px">
+{% if page.next_in_category %}
+<a href="{{ site.baseurl }}{{ page.next_in_category.url }}">{{ page.next_in_category.title }}</a>
+{% else %}
+{% endif %}
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="text-align:right;padding:0px">
+{% if page.previous_in_category %}
+<a href="{{ site.baseurl }}{{ page.previous_in_category.url }}">{{ page.previous_in_category.title }}</a>
+{% else %}
+{% endif %}
+</div>
+{% endif %}

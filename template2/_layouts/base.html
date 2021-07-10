@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+{% include head.html %}
+</head>
+<body class="body custom-background">
+    <nav class="navbar navbar-fixed-static topnav">
+        {% include nav.html %}
+    </nav>
+
+    <!--aside class="lsidebar"></aside-->
+
+    <section class="banner">
+        {% include banner.html %}
+    </section>
+
+    <section class="container mainwrapper">
+        <div class="main">
+            <article class="center">
+                {{ content }}
+            </article>
+        </div>
+        <!--aside class="visible-sm-block visible-md-block visible-lg-block rsidebar">
+            todo: include rsidebar.html
+        </aside-->
+    </section>
+
+    <footer class="container-fluid foot">
+    {% include footer.html %}
+    </footer>
+
+    <script src="{{ site.baseurl }}/assets/js/jquery-1.24.4.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/body.js"></script>
+    <script type="text/javascript" src="/js/duomai.body.js"></script>
+    <script type="text/javascript" src="/js/taobao.body.js"></script>
+</body>
+</html>

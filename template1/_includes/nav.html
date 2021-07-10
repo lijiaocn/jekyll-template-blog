@@ -1,0 +1,26 @@
+<!-- display sm md lg -->
+<div class="container" >
+  <div class="navbar-header">
+    <button id="navb" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#categories" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar" style="color:black"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="navbar-brand hidden-sm">
+      <span><a href="{{ site.url }}" title="主页">{{ site.name }}</a></span>
+      <span class="glyphicon glyphicon-hand-right" style="margin-left:15px"></span>
+    </div>
+  </div>
+  <div class="collapse navbar-collapse" id="categories">
+    <ul class="nav navbar-nav">
+      <li><a href="{{ site.baseurl }}/">首页</a></li>
+      {% for c in site.categories %} 
+      {% assign key=c[0] %}
+      {% assign infos= site.data.cateinfos %}
+      <li><a href="{{ site.baseurl }}/c/{{ key }}/">{{ infos[key].name }}</a></li>
+      {% endfor %}
+      <li><a href="{{ site.baseurl }}/t/all/">标签</a></li>
+    </ul>
+  </div>
+</div>

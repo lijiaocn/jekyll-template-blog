@@ -1,0 +1,35 @@
+name: "Jekyll静态网页模版"
+url:  "https://www.lijiaocn.com"
+baseurl: "/t1"  
+img:  /img
+logo: logo-112x112.jpg
+imgcdn: 
+Copyright: Copyright @2011-2019 All rights reserved.
+ICP-number:
+
+encoding: UTF-8
+future: true
+
+highlighter: rouge
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+
+lsi:  false
+excerpt_separator: "----"
+
+permalink: pretty
+pagination:
+  enabled: true
+  per_page: 20
+  permalink: '/:num/'
+  title: ':title | :num of :max'
+  limit: 0
+#  sort_field: 'createdate'
+  sort_reverse: true
+  trail:
+    before: 4
+    after: 4

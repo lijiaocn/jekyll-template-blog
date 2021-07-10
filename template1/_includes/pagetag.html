@@ -1,0 +1,16 @@
+<p>
+{% if page.categories[0] %}
+<span class="glyphicon glyphicon-folder-open"></span>
+{% assign key=page.categories[0] %}
+{% assign infos= site.data.cateinfos %}
+<span>&nbsp<a href="{{ site.baseurl }}/c/{{ page.categories }}/">{{ infos[key].name }}</a>&nbsp</span>
+{% endif %}
+
+{% for tag in page.tags %}
+<span class="glyphicon glyphicon-tag"></span>
+<span><a href="{{ site.baseurl }}/t/all/#{{ tag }}">{{ tag }}</a>&nbsp</span>
+{% endfor %}
+
+<span class="glyphicon glyphicon-tag"></span>
+<span><a href="https://www.lijiaocn.com/money/img/self.jpg">微信关注</a></span>
+</p>
